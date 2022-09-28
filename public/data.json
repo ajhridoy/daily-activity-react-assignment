@@ -1,0 +1,65 @@
+[
+    {
+      "id": "633486700e77f02e57dc6f31",
+      "time": 15,
+      "name": "Lunges",
+      "img": "https://media.istockphoto.com/photos/lunging-is-good-for-the-legs-picture-id1036780614?k=20&m=1036780614&s=612x612&w=0&h=bG2B5V_RZNKX1oLrKa2GCeUOsNKzKzs2ZxB8-UNvnuw=",
+      "title": "The lunge is a popular leg-strengthening exercise with a multitude of variations to add variety to your workout."
+    },
+    {
+      "id": "63348670521e3cf7168c7022",
+      "time": 10,
+      "name": "Pushups",
+      "img": "https://assets.gqindia.com/photos/5cee7eb00379a73d25177759/master/pass/Pushup.jpg",
+      "title": "Traditional pushups are beneficial for building upper body strength. They work the triceps, pectoral muscles, and shoulders."
+    },
+    {
+      "id": "63348670563d4aa0278fe9ed",
+      "time": 5,
+      "name": "Squats",
+      "img": "https://1fsawj22yir9otqyf1vuai46-wpengine.netdna-ssl.com/wp-content/uploads/sites/32/2017/06/Screen-Shot-2017-06-22-at-3.25.47-PM-1024x640.png",
+      "title": "The squat is considered a compound movement, meaning it works multiple muscle groups across multiple joints."
+    },
+    {
+      "id": "63348670226a97d4fe630681",
+      "time": 12,
+      "name": "Magdalena Daugherty",
+      "img": "https://image.shutterstock.com/image-vector/young-woman-doing-weights-exercise-260nw-1772063849.jpg",
+      "title": "The overhead dumbbell press increases strength throughout the entire shoulder region. Performing the exercise from the standing position will actively engage the core throughout the range of motion."
+    },
+    {
+      "id": "633486703ae0a7b65165617a",
+      "time": 7,
+      "name": "Dumbbell rows",
+      "img": "https://barbend.com/wp-content/uploads/2021/04/BarBend-Article-Image-760-x-427-2021-04-19T170327.648.jpg",
+      "title": "Blowing up your back muscles takes work, and one of the simplest, best, and most popular exercises to get it done are dumbbell rows."
+    },
+    {
+      "id": "633486704a4c5bea3f80e6b3",
+      "time": 20,
+      "name": "Burpees",
+      "img": "https://www.healthbenefitstimes.com/9/uploads/2020/10/burpees-exercise-steps.jpg",
+      "title": "An exercise we love to hate, burpees are a super-effective, whole-body move that provides great bang for your buck for cardiovascular endurance and muscle strength."
+    },
+    {
+      "id": "6334867006218a14b6b4ab8f",
+      "time": 7,
+      "name": "Side planks",
+      "img": "https://images.squarespace-cdn.com/content/v1/5d31ed671abe780001b2964d/1604695972703-K37B5ZAVVV6FU6L62I7U/Jacy+Cunningham+doing+Forearm+Side+Plank",
+      "title": "The side plank works a couple of key muscle groups that are often neglected by even the best abs exercises, such as crunches."
+    },
+    {
+      "id": "6334867006218a14b6b4ab8f",
+      "time": 10,
+      "name": "Planks",
+      "img": "https://hips.hearstapps.com/hmg-prod/images/hdm119918mh15842-1545237096.png",
+      "title": "Planks are an effective way to target both your abdominal muscles and your whole body. Planking stabilizes your core without straining your back the way situps or crunches might."
+    },
+    {
+      "id": "6334867006218a14b6b4ab8f",
+      "time": 15,
+      "name": "Glute bridge",
+      "img": "https://static.spacecrafted.com/f647b6d7284b479f86ed68094f858ff8/i/f80b466778d14846aeb4af9863055902/1/4SoifmQp45JMgBnHp7ed2/Glute-Bridge-STACK.jpg",
+      "title": "The glute bridge effectively works your entire posterior chain, which isn’t only good for you, but it’ll make your booty look perkier, too."
+    }
+  ]

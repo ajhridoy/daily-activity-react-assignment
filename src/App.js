@@ -1,10 +1,11 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Activitis from './Components/Activitis/Activitis';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Statrting this assignment</h1>
+    <div>
+      <Activitis></Activitis>
     </div>
   );
 }
