@@ -2,8 +2,10 @@ import React from 'react';
 
 const ActivitisCart = () => {
     return (
-        <div>
-            <h2>My activitis</h2>
+        <div className='bg-teal-300'>
+            <div>
+                <img src="" alt="" />
+            </div>
         </div>
     );
 };
