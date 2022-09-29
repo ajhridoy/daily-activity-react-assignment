@@ -6,7 +6,7 @@ const GymActivity = ({activity, listBtn}) => {
     return (
         <div>
             <div className="card bg-base-100 shadow-xl">
-                <figure><img className='card-img' src={img} alt="Shoes" /></figure>
+                <figure><img className='card-img' src={img} alt="gym" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{name}</h2>
                     <p><small>{title.slice(0, 120)} ...</small></p>
