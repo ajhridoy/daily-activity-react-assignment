@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './ActivitisCart.css'
 
 const ActivitisCart = ({cart}) => {
@@ -14,6 +16,11 @@ const ActivitisCart = ({cart}) => {
     let time = 0;
     for(const value of cart){
         time = time + value.time;
+    }
+    const activeBtn = ()=>{
+        toast.success('Activity Completed Successfully!!', {
+            position: "top-center",
+        })
     }
     return (
         <div className='bg-teal-300 px-5 py-8 cart'>
@@ -55,7 +62,10 @@ const ActivitisCart = ({cart}) => {
                 <p className='bg-slate-100 text-lg font-semibold p-3 my-3 rounded-lg'>Exercise time <span className='ml-2'>{time}</span> <small>Minitue</small></p>
                  <p className='bg-slate-100 text-lg font-semibold p-3 my-3 rounded-lg'>Break time <span id='break-time' className='ml-2'>{brTime}</span> <small>Minitue</small></p>
             </div>
-            <button className='btn btn-info m-auto font-bold'>Activity Completed</button>
+            <div>
+              <button onClick={activeBtn} className='btn btn-info m-auto font-bold'>Activity Completed</button>
+              <ToastContainer />
+            </div>
             </div>
         </div>
     );
