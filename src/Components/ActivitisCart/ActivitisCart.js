@@ -32,7 +32,7 @@ const ActivitisCart = ({cart}) => {
                     <p>Rajshahi, Bangladesh</p>
                 </div>
             </div>
-            <div className='flex flex-row mt-5 bg-slate-100 p-4 rounded-lg '>
+            <div className='flex flex-row mt-5 bg-slate-100 p-4 rounded-lg justify-center'>
                 <div>
                     <h3 className='text-lg font-bold'>70<small>kg</small></h3>
                     <p>Weight</p>
@@ -58,12 +58,12 @@ const ActivitisCart = ({cart}) => {
                 </div>
             </div>
             <div className='my-5'>
-                <h3 className='text-xl font-bold'>Exercise Details:</h3>
-                <p className='bg-slate-100 text-lg font-semibold p-3 my-3 rounded-lg'>Exercise time <span className='ml-2'>{time}</span> <small>Minitue</small></p>
-                 <p className='bg-slate-100 text-lg font-semibold p-3 my-3 rounded-lg'>Break time <span id='break-time' className='ml-2'>{brTime}</span> <small>Minitue</small></p>
+                <h3 className='text-xl font-bold text-center lg:text-left'>Exercise Details:</h3>
+                <p className='bg-slate-100 text-lg font-semibold p-3 my-3 rounded-lg text-center'>Exercise time <span className='ml-2'>{time}</span> <small>min</small></p>
+                 <p className='bg-slate-100 text-lg font-semibold p-3 my-3 rounded-lg text-center'>Break time <span className='ml-2'>{brTime}</span> <small>min</small></p>
             </div>
             <div>
-              <button onClick={activeBtn} className='btn btn-info m-auto font-bold'>Activity Completed</button>
+              <button onClick={activeBtn} className='btn btn-info font-bold justify-center'>Activity Completed</button>
               <ToastContainer />
             </div>
             </div>
