@@ -1,8 +1,10 @@
 import React from 'react';
+import './ActivitisCart.css'
 
 const ActivitisCart = () => {
     return (
-        <div className='bg-teal-300 px-5 py-8'>
+        <div className='bg-teal-300 px-5 py-8 cart'>
+            <div className='sticky top-0'>
             <div className='flex flex-row'>
                 <img className='rounded-full w-14 h-14' src="http://www.marrybd.com/application/views/member/member_images/IMG_75282.JPG" alt="" />
                 <div className='ml-3'>
@@ -24,7 +26,7 @@ const ActivitisCart = () => {
                     <p>Age</p>
                 </div>
             </div>
-            <div className='bg-slate-100 mt-5 p-3'>
+            <div className='bg-slate-100 mt-5 p-3 rounded-lg'>
                 <h2 className='text-xl font-bold'>Add a Break:</h2>
                 <div className='grid grid-cols-2 gap-3 mt-2'>
                 <button className="btn btn-base-100 rounded-lg">10m</button>
@@ -34,6 +36,13 @@ const ActivitisCart = () => {
                 <button className="btn btn-base-100 rounded-lg">40m</button>
                 <button className="btn btn-base-100 rounded-lg">50m</button>
                 </div>
+            </div>
+            <div className='my-5'>
+                <h3 className='text-xl font-bold'>Exercise Details:</h3>
+                <p className='bg-slate-100 text-lg font-semibold p-3 my-3 rounded-lg'>Exercise time <span className='ml-4'>0</span> <small>Second</small></p>
+                 <p className='bg-slate-100 text-lg font-semibold p-3 my-3 rounded-lg'>Break time <span className='ml-4'>0</span> <small>Second</small></p>
+            </div>
+            <button className='btn btn-info m-auto font-bold'>Activity Completed</button>
             </div>
         </div>
     );

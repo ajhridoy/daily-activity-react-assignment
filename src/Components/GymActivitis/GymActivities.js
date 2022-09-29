@@ -14,7 +14,7 @@ const GymActivities = () => {
         <div>
             <h1 className='text-3xl text-center mt-14 mb-8 font-bold text-orange-400 font-mono'><span><FontAwesomeIcon icon={faDumbbell}></FontAwesomeIcon></span> My Daily GYM Activitis</h1>
             <p className='text-xl text-center mb-8 font-bold'>Select Exercise:</p>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-20 mx-10'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-24 mx-10'>
             {
                 activitis.map(activity => <GymActivity
                     activity = {activity}
