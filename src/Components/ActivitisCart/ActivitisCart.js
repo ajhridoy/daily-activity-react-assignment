@@ -3,7 +3,10 @@ import './ActivitisCart.css'
 
 const ActivitisCart = ({cart}) => {
     const [brTime, setBrTime] = useState([])
-
+    useEffect(()=>{
+        const getData = localStorage.getItem('break-Time');
+        setBrTime(getData)
+    }, [])
     const breakBtn = (time)=>{
          setBrTime(time)
          localStorage.setItem('break-Time', JSON.stringify(time))
