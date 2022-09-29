@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './ActivitisCart.css'
 
-const ActivitisCart = () => {
+const ActivitisCart = ({cart}) => {
+    const [brTime, setBrTime] = useState([])
+
+    const breakBtn = (time)=>{
+         setBrTime(time)
+         localStorage.setItem('break-Time', JSON.stringify(time))
+    }
+    let time = 0;
+    for(const value of cart){
+        time = time + value.time;
+    }
     return (
         <div className='bg-teal-300 px-5 py-8 cart'>
             <div className='sticky top-0'>
@@ -29,18 +39,18 @@ const ActivitisCart = () => {
             <div className='bg-slate-100 mt-5 p-3 rounded-lg'>
                 <h2 className='text-xl font-bold'>Add a Break:</h2>
                 <div className='grid grid-cols-2 gap-3 mt-2'>
-                <button className="btn btn-base-100 rounded-lg">10m</button>
-                <button className="btn btn-base-100 rounded-lg">15m</button>
-                <button className="btn btn-base-100 rounded-lg">25m</button>
-                <button className="btn btn-base-100 rounded-lg">30m</button>
-                <button className="btn btn-base-100 rounded-lg">40m</button>
-                <button className="btn btn-base-100 rounded-lg">50m</button>
+                <button onClick={()=>breakBtn(10)} className="btn btn-base-100 rounded-lg">10m</button>
+                <button onClick={()=>breakBtn(15)} className="btn btn-base-100 rounded-lg">15m</button>
+                <button onClick={()=>breakBtn(25)} className="btn btn-base-100 rounded-lg">25m</button>
+                <button onClick={()=>breakBtn(30)} className="btn btn-base-100 rounded-lg">30m</button>
+                <button onClick={()=>breakBtn(40)} className="btn btn-base-100 rounded-lg">40m</button>
+                <button onClick={()=>breakBtn(50)} className="btn btn-base-100 rounded-lg">50m</button>
                 </div>
             </div>
             <div className='my-5'>
                 <h3 className='text-xl font-bold'>Exercise Details:</h3>
-                <p className='bg-slate-100 text-lg font-semibold p-3 my-3 rounded-lg'>Exercise time <span className='ml-4'>0</span> <small>Second</small></p>
-                 <p className='bg-slate-100 text-lg font-semibold p-3 my-3 rounded-lg'>Break time <span className='ml-4'>0</span> <small>Second</small></p>
+                <p className='bg-slate-100 text-lg font-semibold p-3 my-3 rounded-lg'>Exercise time <span className='ml-2'>{time}</span> <small>Minitue</small></p>
+                 <p className='bg-slate-100 text-lg font-semibold p-3 my-3 rounded-lg'>Break time <span id='break-time' className='ml-2'>{brTime}</span> <small>Minitue</small></p>
             </div>
             <button className='btn btn-info m-auto font-bold'>Activity Completed</button>
             </div>

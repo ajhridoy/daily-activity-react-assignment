@@ -1,9 +1,8 @@
 import React from 'react';
 import './GymActivity.css'
 
-const GymActivity = ({activity}) => {
+const GymActivity = ({activity, listBtn}) => {
     const {img, name, time, title} = activity
-    // console.log(activity)
     return (
         <div>
             <div className="card bg-base-100 shadow-xl">
@@ -13,7 +12,7 @@ const GymActivity = ({activity}) => {
                     <p><small>{title.slice(0, 120)} ...</small></p>
                     <p>Time Required: <span className='font-bold'>{time}m</span></p>
                     <div className="card-actions justify-center mt-5">
-                    <button className="btn btn-primary font-bold">Add to List</button>
+                    <button onClick={()=>listBtn(activity)} className="btn btn-primary font-bold">Add to List</button>
                     </div>
                 </div>
             </div>
